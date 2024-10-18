@@ -1,0 +1,175 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>19/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Oct 17 21:01:39 EDT 2024</td>
+</tr>
+<tr><td>Total time:</td><td>7 seconds (7693 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=@@@@@@@, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=12345, plotNumber=pl-38, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=AL, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>1</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-32, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-33, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikikigmail.com, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Avenue street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+<tr>
+<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@10289886</td></tr>
+</table><p>
+</body>
+</html>

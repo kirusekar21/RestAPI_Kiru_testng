@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="19" passed="19" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-17T21:01:39 EDT" name="Default suite" finished-at="2024-10-17T21:01:47 EDT" duration-ms="7693">
+    <groups>
+    </groups>
+    <test started-at="2024-10-17T21:01:39 EDT" name="Default test" finished-at="2024-10-17T21:01:47 EDT" duration-ms="7693">
+      <class name="requests.PutRequest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:39 EDT" name="setup" finished-at="2024-10-17T21:01:40 EDT" duration-ms="828" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:40 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:42 EDT" duration-ms="1916" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:42 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:42 EDT" duration-ms="290" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:42 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:42 EDT" duration-ms="279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:42 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:43 EDT" duration-ms="277" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:43 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:43 EDT" duration-ms="291" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:43 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:43 EDT" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:43 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:44 EDT" duration-ms="270" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Avenue street, state=GA, country=US, zipCode=30021, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:44 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:44 EDT" duration-ms="276" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=AL, country=US, zipCode=30021, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:44 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:44 EDT" duration-ms="296" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-32, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:44 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:44 EDT" duration-ms="260" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-33, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:44 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:45 EDT" duration-ms="268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:45 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:45 EDT" duration-ms="250" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:45 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:45 EDT" duration-ms="283" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:45 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:45 EDT" duration-ms="256" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:45 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:46 EDT" duration-ms="262" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:46 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:46 EDT" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:46 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:46 EDT" duration-ms="247" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=@@@@@@@, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:46 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:47 EDT" duration-ms="254" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikikigmail.com, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+        <test-method signature="Post_New_user(java.util.LinkedHashMap)[pri:3, instance:requests.PutRequest@10289886]" started-at="2024-10-17T21:01:47 EDT" name="Post_New_user" data-provider="userDataProvider" finished-at="2024-10-17T21:01:47 EDT" duration-ms="323" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[{endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=12345, plotNumber=pl-38, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Post_New_user -->
+      </class> <!-- requests.PutRequest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
