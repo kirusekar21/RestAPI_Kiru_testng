@@ -5,16 +5,16 @@
     <classes>
       <class name="requests.DeleteRequest$GetRequests">
         <methods>
-          <include name="GetAllUser" invocation-numbers="6"/>
+          <include name="DeleteByIdAndUser" invocation-numbers="0"/>
           <include name="setup"/>
         </methods>
       </class> <!-- requests.DeleteRequest$GetRequests -->
-      <class name="requests.GetRequests">
+      <class name="requests.PostRequest">
         <methods>
           <include name="setup"/>
-          <include name="GetAllUser" invocation-numbers="5 7"/>
+          <include name="Post_New_user" invocation-numbers="1"/>
         </methods>
-      </class> <!-- requests.GetRequests -->
+      </class> <!-- requests.PostRequest -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

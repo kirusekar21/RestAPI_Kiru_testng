@@ -1,0 +1,6 @@
+requests\PutRequest.class
+requests\BaseTest.class
+requests\DeleteRequest.class
+requests\GetRequests.class
+requests\PostRequest.class
+requests\DeleteRequest$GetRequests.class

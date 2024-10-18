@@ -39,7 +39,7 @@ public class PutRequest extends BaseTest{
 				     .contentType("application/json")
 		             .when()
 		             .body(pl.putBody(userDataEntry))
-		             .put(user.getendpoint()+"10888");
+		             .put(user.getendpoint()+userid);
 		    
 		             String jsonRes=response.getBody().asString();  
 		             int actualStatusCode=response.getStatusCode();

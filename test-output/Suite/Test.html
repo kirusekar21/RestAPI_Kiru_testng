@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>61/0/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>59/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Oct 17 10:36:24 EDT 2024</td>
+<td>Started on:</td><td>Fri Oct 18 15:13:14 EDT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>27 seconds (27741 ms)</td>
+<tr><td>Total time:</td><td>20 seconds (20497 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -67,6 +67,101 @@ function toggleAllBoxes() {
 </tr>
 </table><p/>
 <small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td><b>Attribute(s)</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, user_email_id=tean5kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td><div><pre>java.lang.AssertionError: Expected status code is 409 Actual status is : 201 expected [409] but found [201]
+	at requests.PostRequest.Post_New_user(PostRequest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace396851838", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace396851838'><pre>java.lang.AssertionError: Expected status code is 409 Actual status is : 201 expected [409] but found [201]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at requests.PostRequest.Post_New_user(PostRequest.java:44)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint= /deleteuser/10970, statuscode=200}</td>
+<td><div><pre>java.lang.AssertionError: Expected status code is 200 Actual status is : 404 expected [200] but found [404]
+	at requests.DeleteRequest$GetRequests.DeleteByIdAndUser(DeleteRequest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1690529928", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1690529928'><pre>java.lang.AssertionError: Expected status code is 200 Actual status is : 404 expected [200] but found [404]
+	at org.testng.Assert.fail(Assert.java:111)
+	at org.testng.Assert.failNotEquals(Assert.java:1578)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+	at org.testng.Assert.assertEquals(Assert.java:132)
+	at org.testng.Assert.assertEquals(Assert.java:1419)
+	at org.testng.Assert.assertEquals(Assert.java:1383)
+	at requests.DeleteRequest$GetRequests.DeleteByIdAndUser(DeleteRequest.java:43)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+	at org.testng.TestRunner.privateRun(TestRunner.java:739)
+	at org.testng.TestRunner.run(TestRunner.java:614)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+	at org.testng.TestNG.runSuites(TestNG.java:1112)
+	at org.testng.TestNG.run(TestNG.java:1079)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+</pre></div></td>
+<td>0</td>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
+</table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
 <tr><td><b>Test method</b></td>
@@ -76,310 +171,300 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=12345, plotNumber=pl-38, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikikigmail.com, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, user_email_id=tean5kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-32, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-12, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=AL, country=US, zipCode=30021, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892, user_email_id=tean5kiru@gmail.com, plotNumber=pl-14, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=123, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
-<tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/use, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, user_email_id=team05kiru@gmail.com, plotNumber=pl-14, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-16, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, user_email_id=team5kirum@gmail.com, plotNumber=null, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893, user_email_id=tean5kiru@gmail.com, plotNumber=pl-15, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/deleteuser/username/kiru, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, user_email_id=team05kirumuth@gmail.com, plotNumber=pl-21, street=Avenue, state=GA, country=USA, zipCode=null, statuscode=201}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
 <td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-11, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
 <td></td>
 <td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
+<td>requests.PostRequest@25bfcafd</td></tr>
 <tr>
 <td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=user, statuscode=404}</td>
 <td></td>
 <td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=team05kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=201}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
+<td>requests.GetRequests@93cf163</td></tr>
 <tr>
 <td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint= /deleteuser/kiru, statuscode=400}</td>
 <td></td>
 <td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
 <tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Avenue street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikikigmail.com, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
 <td></td>
 <td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/deleteuser/username/1122, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
-<tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/user/, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, user_email_id=tean5kirugmail.com, plotNumber=pl-17, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, user_email_id=tean5kirumuth@gmail.com, plotNumber=pl-22, street=Avenue, state=GA, country=USA, zipCode=abcd, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, user_email_id=tean05irumut@gmail.com, plotNumber=pl-19, street=Avenue, state=null, country=USA, zipCode=30055, statuscode=201}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-12, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, user_email_id=team005kiru@gmail.com, plotNumber=pl-21, street=Avenue, state=GA, country=123, zipCode=30055, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/users/username/1122, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint= /deleteuser/, statuscode=404}</td>
-<td></td>
-<td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=               phonenumber, user_email_id=team05kiru@gmail.com, plotNumber=pl-15, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=USA, zipCode=30001, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, user_email_id=team05kirukiru@gmail.com, plotNumber=pl-20, street=Avenue, state=GA, country=null, zipCode=30055, statuscode=201}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
+<td>requests.PutRequest@4b6690c0</td></tr>
 <tr>
 <td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/, statuscode=404}</td>
 <td></td>
 <td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
+<td>requests.GetRequests@93cf163</td></tr>
 <tr>
-<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/deleteuser/username/, statuscode=400}</td>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=123, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
 <td></td>
 <td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, user_email_id=team05kirukiru@gmail.com, plotNumber=pl-20, street=Avenue, state=GA, country=null, zipCode=30055, statuscode=201}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, user_email_id=team005kiru@gmail.com, plotNumber=pl-21, street=Avenue, state=GA, country=123, zipCode=30055, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
 <tr>
 <td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, user_email_id=team0005kiru@gmail.com, plotNumber=pl-22, street=Avenue, state=GA, country=USA, zipCode=null, statuscode=201}</td>
 <td></td>
 <td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
+<td>requests.PostRequest@25bfcafd</td></tr>
 <tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=@@@@@@@, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
 <td></td>
 <td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
+<td>requests.PutRequest@4b6690c0</td></tr>
 <tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/users/username/kiru, statuscode=200}</td>
+<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/deleteuser/username/, statuscode=400}</td>
 <td></td>
 <td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
 <tr>
-<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint= /deleteuser/10680, statuscode=200}</td>
-<td></td>
-<td>1</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
-<tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-33, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-33, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
 <td></td>
 <td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, user_email_id=tean5kiru@gmail.com, plotNumber=pl-19, street=1234, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
-<tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/user/10680, statuscode=200}</td>
-<td></td>
-<td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/users, statuscode=200}</td>
-<td></td>
-<td>2</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
-<tr>
-<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-20, street=Avenue, state=23, country=USA, zipCode=30055, statuscode=409}</td>
-<td></td>
-<td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
+<td>requests.PutRequest@4b6690c0</td></tr>
 <tr>
 <td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/, statuscode=404}</td>
 <td></td>
 <td>0</td>
-<td>requests.DeleteRequest$GetRequests@75c56eb9</td></tr>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, user_email_id=tean5kiru@gmail.com, plotNumber=pl-19, street=1234, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, user_email_id=team05kirumuth@gmail.com, plotNumber=pl-21, street=Avenue, state=GA, country=USA, zipCode=null, statuscode=201}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=AL, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/use, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, user_email_id=team5kirum@gmail.com, plotNumber=null, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/deleteuser/username/1122, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, user_email_id=team05kiru@gmail.com, plotNumber=pl-14, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-16, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/user, statuscode=404}</td>
+<td></td>
+<td>1</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=@@@@@@@, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/user/, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, user_email_id=tean5kirugmail.com, plotNumber=pl-17, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
 <tr>
 <td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/users/username, statuscode=404}</td>
 <td></td>
 <td>0</td>
-<td>requests.GetRequests@2f666ebb</td></tr>
+<td>requests.GetRequests@93cf163</td></tr>
 <tr>
-<td title='requests.PutRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
 <td></td>
 <td>0</td>
-<td>requests.PutRequest@57a3e26a</td></tr>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=               phonenumber, user_email_id=team05kiru@gmail.com, plotNumber=pl-15, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/user/kiru, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/users/username/1122, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-12, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint= /deleteuser/, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892, user_email_id=tean5kiru@gmail.com, plotNumber=pl-14, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-32, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, user_email_id=tean5kirumuth@gmail.com, plotNumber=pl-22, street=Avenue, state=GA, country=USA, zipCode=abcd, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Avenue street, state=GA, country=US, zipCode=30021, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=team05kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=201}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, user_email_id=tean05irumut@gmail.com, plotNumber=pl-19, street=Avenue, state=null, country=USA, zipCode=30055, statuscode=201}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-20, street=Avenue, state=23, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-12, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=404}</td>
+<td></td>
+<td>1</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.PutRequest.Put_New_user()'><b>Put_New_user</b><br>Test class: requests.PutRequest<br>Parameters: {endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=12345, plotNumber=pl-38, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400}</td>
+<td></td>
+<td>0</td>
+<td>requests.PutRequest@4b6690c0</td></tr>
+<tr>
+<td title='requests.GetRequests.GetAllUser()'><b>GetAllUser</b><br>Test class: requests.GetRequests<br>Parameters: {endpoint=/users/username/k, statuscode=404}</td>
+<td></td>
+<td>0</td>
+<td>requests.GetRequests@93cf163</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893, user_email_id=tean5kiru@gmail.com, plotNumber=pl-15, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
+<tr>
+<td title='requests.DeleteRequest$GetRequests.DeleteByIdAndUser()'><b>DeleteByIdAndUser</b><br>Test class: requests.DeleteRequest$GetRequests<br>Parameters: {endpoint=/deleteuser/username/kiru, statuscode=200}</td>
+<td></td>
+<td>0</td>
+<td>requests.DeleteRequest$GetRequests@46268f08</td></tr>
+<tr>
+<td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=USA, zipCode=30001, statuscode=409}</td>
+<td></td>
+<td>0</td>
+<td>requests.PostRequest@25bfcafd</td></tr>
 <tr>
 <td title='requests.PostRequest.Post_New_user()'><b>Post_New_user</b><br>Test class: requests.PostRequest<br>Parameters: {endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, user_email_id=tean05irumu@gmail.com, plotNumber=pl-18, street=null, state=GA, country=USA, zipCode=30055, statuscode=201}</td>
 <td></td>
 <td>0</td>
-<td>requests.PostRequest@4b2c5e02</td></tr>
+<td>requests.PostRequest@25bfcafd</td></tr>
 </table><p>
 </body>
 </html>

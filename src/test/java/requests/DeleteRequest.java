@@ -16,10 +16,10 @@ import pojo.User;
 public class DeleteRequest {
 	public class GetRequests extends BaseTest{
 	    private Response response;
-	    private RequestSpecification request;
+//	    private RequestSpecification request;
 	    private User user; 
 	    private payload pl = new payload();
-	    private List<LinkedHashMap<String, String>> userData;
+//	    private List<LinkedHashMap<String, String>> userData;
 	    
 @Override
 protected String getSheetName() {

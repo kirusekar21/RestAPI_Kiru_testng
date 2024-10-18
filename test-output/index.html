@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\mukil\AppData\Local\Temp\testng-eclipse-841846446\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\mukil\eclipse-workspace\Team5_kiruthika_RestAPI\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,111 +92,330 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">19 methods,   19 passed</span>
+                    <span class="method-stats">61 methods, 2 failed,   59 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint= /deleteuser/10970, statuscode=200})">DeleteByIdAndUser({endpoint= /deleteuser/10970, statuscode=200})</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, ...)">Post_New_user({endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint= /deleteuser/kiru, statuscode=400})">DeleteByIdAndUser({endpoint= /deleteuser/kiru, statuscode=400})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint=/deleteuser/username/, statuscode=400})">DeleteByIdAndUser({endpoint=/deleteuser/username/, statuscode=400})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint=/, statuscode=404})">DeleteByIdAndUser({endpoint=/, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint=/deleteuser/username/1122, statuscode=404})">DeleteByIdAndUser({endpoint=/deleteuser/username/1122, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint=/, statuscode=404})">DeleteByIdAndUser({endpoint=/, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint= /deleteuser/, statuscode=404})">DeleteByIdAndUser({endpoint= /deleteuser/, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.DeleteRequest$GetRequests" class="method navigator-link" hash-for-method="DeleteByIdAndUser({endpoint=/deleteuser/username/kiru, statuscode=200})">DeleteByIdAndUser({endpoint=/deleteuser/username/kiru, statuscode=200})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=user, statuscode=404})">GetAllUser({endpoint=user, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/, statuscode=404})">GetAllUser({endpoint=/, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/use, statuscode=404})">GetAllUser({endpoint=/use, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/, statuscode=404})">GetAllUser({endpoint=/, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/user, statuscode=404})">GetAllUser({endpoint=/user, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/user/, statuscode=404})">GetAllUser({endpoint=/user/, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/users/username, statuscode=404})">GetAllUser({endpoint=/users/username, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/user/kiru, statuscode=400})">GetAllUser({endpoint=/user/kiru, statuscode=400})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/users/username/1122, statuscode=404})">GetAllUser({endpoint=/users/username/1122, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.GetRequests" class="method navigator-link" hash-for-method="GetAllUser({endpoint=/users/username/k, statuscode=404})">GetAllUser({endpoint=/users/username/k, statuscode=404})</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, u...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, u...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, us...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, use...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, use...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=            ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=            ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892,...)">Post_New_user({endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892,...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_...)">Post_New_user({endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893...)">Post_New_user({endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567...)">Post_New_user({endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PostRequest" class="method navigator-link" hash-for-method="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, ...)">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="requests.PutRequest" class="method navigator-link" hash-for-method="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -207,8 +426,202 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">requests.DeleteRequest$GetRequests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint= /deleteuser/10970, statuscode=200})">
+                  </a> <!-- DeleteByIdAndUser({endpoint= /deleteuser/10970, statuscode=200}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint= /deleteuser/10970, statuscode=200})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected status code is 200 Actual status is : 404 expected [200] but found [404]
+	at requests.DeleteRequest$GetRequests.DeleteByIdAndUser(DeleteRequest.java:43)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">requests.PostRequest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, user_email_id=tean5kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                  <div class="stack-trace">java.lang.AssertionError: Expected status code is 409 Actual status is : 201 expected [409] but found [201]
+	at requests.PostRequest.Post_New_user(PostRequest.java:44)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">requests.GetRequests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=user, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=user, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=user, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/use, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/use, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/use, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/user, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/user, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/user, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/user/, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/user/, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/user/, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/users/username, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/users/username, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/users/username, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/user/kiru, statuscode=400})">
+                  </a> <!-- GetAllUser({endpoint=/user/kiru, statuscode=400}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/user/kiru, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/users/username/1122, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/users/username/1122, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/users/username/1122, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="GetAllUser({endpoint=/users/username/k, statuscode=404})">
+                  </a> <!-- GetAllUser({endpoint=/users/username/k, statuscode=404}) -->
+                  <span class="method-name">GetAllUser</span>
+                  <span class="parameters">({endpoint=/users/username/k, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">requests.DeleteRequest$GetRequests</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint= /deleteuser/kiru, statuscode=400})">
+                  </a> <!-- DeleteByIdAndUser({endpoint= /deleteuser/kiru, statuscode=400}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint= /deleteuser/kiru, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint=/deleteuser/username/, statuscode=400})">
+                  </a> <!-- DeleteByIdAndUser({endpoint=/deleteuser/username/, statuscode=400}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint=/deleteuser/username/, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint=/, statuscode=404})">
+                  </a> <!-- DeleteByIdAndUser({endpoint=/, statuscode=404}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint=/, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint=/deleteuser/username/1122, statuscode=404})">
+                  </a> <!-- DeleteByIdAndUser({endpoint=/deleteuser/username/1122, statuscode=404}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint=/deleteuser/username/1122, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint=/, statuscode=404})">
+                  </a> <!-- DeleteByIdAndUser({endpoint=/, statuscode=404}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint=/, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint= /deleteuser/, statuscode=404})">
+                  </a> <!-- DeleteByIdAndUser({endpoint= /deleteuser/, statuscode=404}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint= /deleteuser/, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DeleteByIdAndUser({endpoint=/deleteuser/username/kiru, statuscode=200})">
+                  </a> <!-- DeleteByIdAndUser({endpoint=/deleteuser/username/kiru, statuscode=200}) -->
+                  <span class="method-name">DeleteByIdAndUser</span>
+                  <span class="parameters">({endpoint=/deleteuser/username/kiru, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">requests.PutRequest</span>
@@ -216,401 +629,954 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=@@@@@@@, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=12345, plotNumber=pl-38, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=AL, country=US, zipCode=30021, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-32, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-33, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
                   <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikikigmail.com, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-33, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=AL, country=US, zipCode=30021, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=@@@@@@@, plotNumber=pl-37, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-36, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-32, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30001, statuscode=200})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
                   <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-31, street=Avenue street, state=GA, country=US, zipCode=30021, statuscode=200})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...) -->
-                  <span class="method-name">Post_New_user</span>
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_email_id=team005kikiki@gmail.com, plotNumber=pl-35, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...) -->
+                  <span class="method-name">Put_New_user</span>
                   <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-34, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
-                  </a> <!-- Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
-                  <span class="method-name">Post_New_user</span>
-                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=team005kikiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=US, zipCode=30021, statuscode=200})</span>
+                  <a name="Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)">
+                  </a> <!-- Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...) -->
+                  <span class="method-name">Put_New_user</span>
+                  <span class="parameters">({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, user_email_id=12345, plotNumber=pl-38, street=Main street, state=AL, country=USA, zipCode=30021, statuscode=400})</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">requests.PostRequest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, u...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, u...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-11, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=123, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, user_email_id=team05kirukiru@gmail.com, plotNumber=pl-20, street=Avenue, state=GA, country=null, zipCode=30055, statuscode=201})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, user_email_id=team005kiru@gmail.com, plotNumber=pl-21, street=Avenue, state=GA, country=123, zipCode=30055, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, us...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, us...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, user_email_id=team0005kiru@gmail.com, plotNumber=pl-22, street=Avenue, state=GA, country=USA, zipCode=null, statuscode=201})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, user_email_id=tean5kiru@gmail.com, plotNumber=pl-19, street=1234, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, user_email_id=team05kirumuth@gmail.com, plotNumber=pl-21, street=Avenue, state=GA, country=USA, zipCode=null, statuscode=201})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, user_email_id=team5kirum@gmail.com, plotNumber=null, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, use...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, use...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, user_email_id=team05kiru@gmail.com, plotNumber=pl-14, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-16, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, user_email_id=tean5kirugmail.com, plotNumber=pl-17, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=            ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=            ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=               phonenumber, user_email_id=team05kiru@gmail.com, plotNumber=pl-15, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-12, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892,...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892,...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892, user_email_id=tean5kiru@gmail.com, plotNumber=pl-14, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, user_email_id=tean5kirumuth@gmail.com, plotNumber=pl-22, street=Avenue, state=GA, country=USA, zipCode=abcd, statuscode=400})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=team05kiru@gmail.com, plotNumber=pl-13, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=201})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, user_email_id=tean05irumut@gmail.com, plotNumber=pl-19, street=Avenue, state=null, country=USA, zipCode=30055, statuscode=201})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-20, street=Avenue, state=23, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_...)">
+                  </a> <!-- Post_New_user({endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_email_id=tean5kiru@gmail.com, plotNumber=pl-12, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=404})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893, user_email_id=tean5kiru@gmail.com, plotNumber=pl-15, street=Avenue, state=GA, country=USA, zipCode=30055, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567890, user_email_id=team005kiki@gmail.com, plotNumber=pl-21, street=Main street, state=GA, country=USA, zipCode=30001, statuscode=409})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, ...)">
+                  </a> <!-- Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, ...) -->
+                  <span class="method-name">Post_New_user</span>
+                  <span class="parameters">({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, user_email_id=tean05irumu@gmail.com, plotNumber=pl-18, street=null, state=GA, country=USA, zipCode=30055, statuscode=201})</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\mukil\AppData\Local\Temp\testng-eclipse-841846446\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\mukil\eclipse-workspace\Team5_kiruthika_RestAPI\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;requests.PutRequest&quot;&gt;
-        &lt;methods&gt;
-          &lt;include name=&quot;Post_New_user&quot;/&gt;
-        &lt;/methods&gt;
-      &lt;/class&gt; &lt;!-- requests.PutRequest --&gt;
+      &lt;class name=&quot;requests.BaseTest&quot;/&gt;
+      &lt;class name=&quot;requests.GetRequests&quot;/&gt;
+      &lt;class name=&quot;requests.PostRequest&quot;/&gt;
+      &lt;class name=&quot;requests.PutRequest&quot;/&gt;
+      &lt;class name=&quot;requests.DeleteRequest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (5 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(19);
+data.addRows(61);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'Post_New_user')
-data.setCell(0, 2, 'requests.PutRequest')
-data.setCell(0, 3, 1916);
+data.setCell(0, 1, 'GetAllUser')
+data.setCell(0, 2, 'requests.GetRequests')
+data.setCell(0, 3, 1999);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'Post_New_user')
-data.setCell(1, 2, 'requests.PutRequest')
-data.setCell(1, 3, 323);
+data.setCell(1, 2, 'requests.PostRequest')
+data.setCell(1, 3, 1076);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Post_New_user')
-data.setCell(2, 2, 'requests.PutRequest')
-data.setCell(2, 3, 296);
+data.setCell(2, 2, 'requests.PostRequest')
+data.setCell(2, 3, 504);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'Post_New_user')
-data.setCell(3, 2, 'requests.PutRequest')
-data.setCell(3, 3, 291);
+data.setCell(3, 2, 'requests.PostRequest')
+data.setCell(3, 3, 390);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'Post_New_user')
-data.setCell(4, 2, 'requests.PutRequest')
-data.setCell(4, 3, 290);
+data.setCell(4, 1, 'DeleteByIdAndUser')
+data.setCell(4, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(4, 3, 300);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'Post_New_user')
-data.setCell(5, 2, 'requests.PutRequest')
-data.setCell(5, 3, 283);
+data.setCell(5, 2, 'requests.PostRequest')
+data.setCell(5, 3, 295);
 data.setCell(6, 0, 6)
 data.setCell(6, 1, 'Post_New_user')
-data.setCell(6, 2, 'requests.PutRequest')
-data.setCell(6, 3, 279);
+data.setCell(6, 2, 'requests.PostRequest')
+data.setCell(6, 3, 288);
 data.setCell(7, 0, 7)
 data.setCell(7, 1, 'Post_New_user')
-data.setCell(7, 2, 'requests.PutRequest')
-data.setCell(7, 3, 277);
+data.setCell(7, 2, 'requests.PostRequest')
+data.setCell(7, 3, 287);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'Post_New_user')
+data.setCell(8, 1, 'Put_New_user')
 data.setCell(8, 2, 'requests.PutRequest')
-data.setCell(8, 3, 276);
+data.setCell(8, 3, 286);
 data.setCell(9, 0, 9)
 data.setCell(9, 1, 'Post_New_user')
-data.setCell(9, 2, 'requests.PutRequest')
-data.setCell(9, 3, 270);
+data.setCell(9, 2, 'requests.PostRequest')
+data.setCell(9, 3, 280);
 data.setCell(10, 0, 10)
 data.setCell(10, 1, 'Post_New_user')
-data.setCell(10, 2, 'requests.PutRequest')
-data.setCell(10, 3, 268);
+data.setCell(10, 2, 'requests.PostRequest')
+data.setCell(10, 3, 276);
 data.setCell(11, 0, 11)
 data.setCell(11, 1, 'Post_New_user')
-data.setCell(11, 2, 'requests.PutRequest')
-data.setCell(11, 3, 262);
+data.setCell(11, 2, 'requests.PostRequest')
+data.setCell(11, 3, 275);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Post_New_user')
+data.setCell(12, 1, 'Put_New_user')
 data.setCell(12, 2, 'requests.PutRequest')
-data.setCell(12, 3, 260);
+data.setCell(12, 3, 275);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'Post_New_user')
-data.setCell(13, 2, 'requests.PutRequest')
-data.setCell(13, 3, 260);
+data.setCell(13, 2, 'requests.PostRequest')
+data.setCell(13, 3, 274);
 data.setCell(14, 0, 14)
 data.setCell(14, 1, 'Post_New_user')
-data.setCell(14, 2, 'requests.PutRequest')
-data.setCell(14, 3, 256);
+data.setCell(14, 2, 'requests.PostRequest')
+data.setCell(14, 3, 273);
 data.setCell(15, 0, 15)
 data.setCell(15, 1, 'Post_New_user')
-data.setCell(15, 2, 'requests.PutRequest')
-data.setCell(15, 3, 254);
+data.setCell(15, 2, 'requests.PostRequest')
+data.setCell(15, 3, 272);
 data.setCell(16, 0, 16)
 data.setCell(16, 1, 'Post_New_user')
-data.setCell(16, 2, 'requests.PutRequest')
-data.setCell(16, 3, 250);
+data.setCell(16, 2, 'requests.PostRequest')
+data.setCell(16, 3, 271);
 data.setCell(17, 0, 17)
 data.setCell(17, 1, 'Post_New_user')
-data.setCell(17, 2, 'requests.PutRequest')
-data.setCell(17, 3, 247);
+data.setCell(17, 2, 'requests.PostRequest')
+data.setCell(17, 3, 270);
 data.setCell(18, 0, 18)
 data.setCell(18, 1, 'Post_New_user')
-data.setCell(18, 2, 'requests.PutRequest')
-data.setCell(18, 3, 247);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(18, 2, 'requests.PostRequest')
+data.setCell(18, 3, 269);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'Put_New_user')
+data.setCell(19, 2, 'requests.PutRequest')
+data.setCell(19, 3, 269);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'Post_New_user')
+data.setCell(20, 2, 'requests.PostRequest')
+data.setCell(20, 3, 269);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'GetAllUser')
+data.setCell(21, 2, 'requests.GetRequests')
+data.setCell(21, 3, 269);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'Post_New_user')
+data.setCell(22, 2, 'requests.PostRequest')
+data.setCell(22, 3, 269);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'Post_New_user')
+data.setCell(23, 2, 'requests.PostRequest')
+data.setCell(23, 3, 268);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'Put_New_user')
+data.setCell(24, 2, 'requests.PutRequest')
+data.setCell(24, 3, 268);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'Put_New_user')
+data.setCell(25, 2, 'requests.PutRequest')
+data.setCell(25, 3, 267);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'Post_New_user')
+data.setCell(26, 2, 'requests.PostRequest')
+data.setCell(26, 3, 267);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'Post_New_user')
+data.setCell(27, 2, 'requests.PostRequest')
+data.setCell(27, 3, 267);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'Put_New_user')
+data.setCell(28, 2, 'requests.PutRequest')
+data.setCell(28, 3, 267);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'GetAllUser')
+data.setCell(29, 2, 'requests.GetRequests')
+data.setCell(29, 3, 266);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'Post_New_user')
+data.setCell(30, 2, 'requests.PostRequest')
+data.setCell(30, 3, 266);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'GetAllUser')
+data.setCell(31, 2, 'requests.GetRequests')
+data.setCell(31, 3, 266);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'Post_New_user')
+data.setCell(32, 2, 'requests.PostRequest')
+data.setCell(32, 3, 262);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'GetAllUser')
+data.setCell(33, 2, 'requests.GetRequests')
+data.setCell(33, 3, 260);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'Put_New_user')
+data.setCell(34, 2, 'requests.PutRequest')
+data.setCell(34, 3, 260);
+data.setCell(35, 0, 35)
+data.setCell(35, 1, 'GetAllUser')
+data.setCell(35, 2, 'requests.GetRequests')
+data.setCell(35, 3, 259);
+data.setCell(36, 0, 36)
+data.setCell(36, 1, 'DeleteByIdAndUser')
+data.setCell(36, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(36, 3, 259);
+data.setCell(37, 0, 37)
+data.setCell(37, 1, 'Put_New_user')
+data.setCell(37, 2, 'requests.PutRequest')
+data.setCell(37, 3, 258);
+data.setCell(38, 0, 38)
+data.setCell(38, 1, 'Put_New_user')
+data.setCell(38, 2, 'requests.PutRequest')
+data.setCell(38, 3, 257);
+data.setCell(39, 0, 39)
+data.setCell(39, 1, 'GetAllUser')
+data.setCell(39, 2, 'requests.GetRequests')
+data.setCell(39, 3, 255);
+data.setCell(40, 0, 40)
+data.setCell(40, 1, 'Post_New_user')
+data.setCell(40, 2, 'requests.PostRequest')
+data.setCell(40, 3, 254);
+data.setCell(41, 0, 41)
+data.setCell(41, 1, 'DeleteByIdAndUser')
+data.setCell(41, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(41, 3, 253);
+data.setCell(42, 0, 42)
+data.setCell(42, 1, 'GetAllUser')
+data.setCell(42, 2, 'requests.GetRequests')
+data.setCell(42, 3, 253);
+data.setCell(43, 0, 43)
+data.setCell(43, 1, 'Put_New_user')
+data.setCell(43, 2, 'requests.PutRequest')
+data.setCell(43, 3, 253);
+data.setCell(44, 0, 44)
+data.setCell(44, 1, 'Put_New_user')
+data.setCell(44, 2, 'requests.PutRequest')
+data.setCell(44, 3, 253);
+data.setCell(45, 0, 45)
+data.setCell(45, 1, 'Put_New_user')
+data.setCell(45, 2, 'requests.PutRequest')
+data.setCell(45, 3, 252);
+data.setCell(46, 0, 46)
+data.setCell(46, 1, 'GetAllUser')
+data.setCell(46, 2, 'requests.GetRequests')
+data.setCell(46, 3, 252);
+data.setCell(47, 0, 47)
+data.setCell(47, 1, 'Put_New_user')
+data.setCell(47, 2, 'requests.PutRequest')
+data.setCell(47, 3, 251);
+data.setCell(48, 0, 48)
+data.setCell(48, 1, 'DeleteByIdAndUser')
+data.setCell(48, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(48, 3, 250);
+data.setCell(49, 0, 49)
+data.setCell(49, 1, 'Put_New_user')
+data.setCell(49, 2, 'requests.PutRequest')
+data.setCell(49, 3, 250);
+data.setCell(50, 0, 50)
+data.setCell(50, 1, 'Put_New_user')
+data.setCell(50, 2, 'requests.PutRequest')
+data.setCell(50, 3, 249);
+data.setCell(51, 0, 51)
+data.setCell(51, 1, 'Put_New_user')
+data.setCell(51, 2, 'requests.PutRequest')
+data.setCell(51, 3, 249);
+data.setCell(52, 0, 52)
+data.setCell(52, 1, 'Post_New_user')
+data.setCell(52, 2, 'requests.PostRequest')
+data.setCell(52, 3, 248);
+data.setCell(53, 0, 53)
+data.setCell(53, 1, 'DeleteByIdAndUser')
+data.setCell(53, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(53, 3, 247);
+data.setCell(54, 0, 54)
+data.setCell(54, 1, 'Put_New_user')
+data.setCell(54, 2, 'requests.PutRequest')
+data.setCell(54, 3, 247);
+data.setCell(55, 0, 55)
+data.setCell(55, 1, 'Put_New_user')
+data.setCell(55, 2, 'requests.PutRequest')
+data.setCell(55, 3, 245);
+data.setCell(56, 0, 56)
+data.setCell(56, 1, 'GetAllUser')
+data.setCell(56, 2, 'requests.GetRequests')
+data.setCell(56, 3, 243);
+data.setCell(57, 0, 57)
+data.setCell(57, 1, 'DeleteByIdAndUser')
+data.setCell(57, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(57, 3, 243);
+data.setCell(58, 0, 58)
+data.setCell(58, 1, 'DeleteByIdAndUser')
+data.setCell(58, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(58, 3, 238);
+data.setCell(59, 0, 59)
+data.setCell(59, 1, 'Put_New_user')
+data.setCell(59, 2, 'requests.PutRequest')
+data.setCell(59, 3, 235);
+data.setCell(60, 0, 60)
+data.setCell(60, 1, 'DeleteByIdAndUser')
+data.setCell(60, 2, 'requests.DeleteRequest$GetRequests')
+data.setCell(60, 3, 226);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 18 seconds</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">requests.PutRequest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">requests.GetRequests</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)</span>
-                <span class="method-start">842 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/user, statuscode=404})</span>
+                <span class="method-start">1198 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)</span>
-                <span class="method-start">2764 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/use, statuscode=404})</span>
+                <span class="method-start">3251 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">3055 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/, statuscode=404})</span>
+                <span class="method-start">3526 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">3335 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/users/username/k, statuscode=404})</span>
+                <span class="method-start">3788 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">3613 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/users/username, statuscode=404})</span>
+                <span class="method-start">4060 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">3906 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/users/username/1122, statuscode=404})</span>
+                <span class="method-start">4315 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">4167 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/, statuscode=404})</span>
+                <span class="method-start">4577 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">4438 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/user/kiru, statuscode=400})</span>
+                <span class="method-start">4835 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">4715 ms</span>
+                <span class="method-name">GetAllUser({endpoint=/user/, statuscode=404})</span>
+                <span class="method-start">5091 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">5012 ms</span>
+                <span class="method-name">GetAllUser({endpoint=user, statuscode=404})</span>
+                <span class="method-start">5362 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">requests.PostRequest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">5609 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/create, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, user_...)</span>
+                <span class="method-start">5676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)</span>
-                <span class="method-start">5273 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=null, user_last_name=muthu, user_contact_number=4123567891, ...)</span>
+                <span class="method-start">6754 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)</span>
-                <span class="method-start">5542 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=12345, user_last_name=muthu, user_contact_number=4123567892,...)</span>
+                <span class="method-start">7006 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)</span>
-                <span class="method-start">5794 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru@#, user_last_name=muthu, user_contact_number=4123567893...)</span>
+                <span class="method-start">7305 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)</span>
-                <span class="method-start">6078 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=null, user_contact_number=4123567890, u...)</span>
+                <span class="method-start">7594 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">6335 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=12345, user_contact_number=4123567890, ...)</span>
+                <span class="method-start">7865 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)</span>
-                <span class="method-start">6598 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=Mut@@, user_contact_number=4123567890, ...)</span>
+                <span class="method-start">8135 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">6846 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)</span>
+                <span class="method-start">8407 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">7094 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567, use...)</span>
+                <span class="method-start">8676 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">Post_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
-                <span class="method-start">7349 ms</span>
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=            ...)</span>
+                <span class="method-start">8958 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=7123567890, ...)</span>
+                <span class="method-start">9232 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8123567890, ...)</span>
+                <span class="method-start">9508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567890, ...)</span>
+                <span class="method-start">9772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)</span>
+                <span class="method-start">10048 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123576899, ...)</span>
+                <span class="method-start">10321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9123567889, ...)</span>
+                <span class="method-start">10827 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=9351267898, ...)</span>
+                <span class="method-start">11097 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123567890, ...)</span>
+                <span class="method-start">11374 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4212356789, ...)</span>
+                <span class="method-start">11766 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=4123587690, ...)</span>
+                <span class="method-start">12036 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8219356789, ...)</span>
+                <span class="method-start">12292 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=muthu, user_contact_number=8931356789, ...)</span>
+                <span class="method-start">12569 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiru, user_last_name=sek, user_contact_number=6623576890, us...)</span>
+                <span class="method-start">12838 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Post_New_user({endpoint=/createusers, user_first_name=kiruthika, user_last_name=muthu, user_contact_number=4123567...)</span>
+                <span class="method-start">13129 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">requests.PutRequest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">13400 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4129967890, ...)</span>
+                <span class="method-start">13459 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=muthu, user_contact_number=4219967890, ...)</span>
+                <span class="method-start">13737 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">14007 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">14256 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">14508 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">14776 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">15028 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">15283 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">15529 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=1234, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">15817 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru@@, user_last_name=sek, user_contact_number=4219967890, ...)</span>
+                <span class="method-start">16088 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=1234, user_contact_number=4219967890, u...)</span>
+                <span class="method-start">16357 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek@@, user_contact_number=4219967890, ...)</span>
+                <span class="method-start">16610 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=421996, user_e...)</span>
+                <span class="method-start">16869 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">17119 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=String, user_e...)</span>
+                <span class="method-start">17373 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">17634 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">17894 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">Put_New_user({endpoint=/updateuser/, user_first_name=kiru, user_last_name=sek, user_contact_number=4219967890, us...)</span>
+                <span class="method-start">18131 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">requests.DeleteRequest$GetRequests</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup</span>
+                <span class="method-start">18382 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">DeleteByIdAndUser({endpoint= /deleteuser/10970, statuscode=200})</span>
+                <span class="method-start">18423 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint= /deleteuser/, statuscode=404})</span>
+                <span class="method-start">18670 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint= /deleteuser/kiru, statuscode=400})</span>
+                <span class="method-start">18971 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint=/, statuscode=404})</span>
+                <span class="method-start">19226 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint=/deleteuser/username/kiru, statuscode=200})</span>
+                <span class="method-start">19478 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint=/deleteuser/username/1122, statuscode=404})</span>
+                <span class="method-start">19739 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint=/deleteuser/username/, statuscode=400})</span>
+                <span class="method-start">19987 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DeleteByIdAndUser({endpoint=/, statuscode=404})</span>
+                <span class="method-start">20216 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
